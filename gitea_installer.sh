@@ -48,6 +48,9 @@ echo "-u UFW - Use UFW"
 exit
 fi
 
+#update PATH
+export PATH="$PATH:/sbin:/usr/sbin:usr/local/sbin"
+
 # Check if curl is installed
 if [ ! -x /usr/bin/curl ] ; then
 CURL_NOT_EXIST=1

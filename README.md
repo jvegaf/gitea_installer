@@ -1,5 +1,6 @@
 # gitea_installer
-Install script for GITEA on Ubuntu 20.04 LTS
+Install script for GITEA on Debian 10
+
 
 This script pulls the newest version of gitea and install all requirements.
 
@@ -11,7 +12,7 @@ The following will be installed:
 - UFW (optional)
 
 ## Use it ;-)
-This installer script is for Ubuntu 20.04 LTS, other versions may work but not tested.
+This installer script is for Debian 10, other versions may work but not tested.
 
 Available flags:
 ```
@@ -26,7 +27,7 @@ Available flags:
 
 ## Install
 ```
-wget https://github.com/lanbugs/gitea_installer/raw/main/gitea_installer.sh
+wget https://github.com/jvegaf/gitea_installer/raw/main/gitea_installer.sh
 chmod +x gitea_installer.sh
 
 sudo ./gitea_installer.sh -f git.example.com -e admin@example.com -i 10.10.10.10 -p securepassword -r sqlrootpw -l -u
